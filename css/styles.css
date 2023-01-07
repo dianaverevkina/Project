@@ -249,6 +249,7 @@ body {
 }
 
 .brands__image {
+  max-height: 100%;
   position: relative;
 }
 
@@ -356,7 +357,7 @@ body {
 }
 
 .item {
-  height: 100%;
+/*  width: 100%;*/
   position: relative;
 }
 
@@ -372,7 +373,7 @@ body {
   align-items: center;
  
   opacity: 1;
-/*  visibility: hidden;*/
+  visibility: hidden;
 }
 
 .item:hover .item__logo {
@@ -380,8 +381,8 @@ body {
   visibility: visible;
 }
 
-
 .item__logo-text {
+  display: block;
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -389,7 +390,124 @@ body {
   text-transform: uppercase;
 }
 
-.item__image {
+.item__image-link {
   max-width: 100%;
-  height: 100%;
+}
+
+.shop__footer {
+  background-color: #282f35;
+  text-align: center;
+  padding: 74px 0;
+}
+
+.shop__btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 1px solid #94979a;
+  padding: 17px 56px;
+}
+
+.subscribe__body {
+  max-width: 534px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 105px 0;
+}
+
+.subscribe__logo {
+  margin: 0 0 39px;
+}
+
+.subscribe__title {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.4;
+  color: #848789;
+  letter-spacing: 1.5px;
+  margin: 0 0 34px;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__input {
+  flex: 1 1 auto;
+  margin: 0 8px 0 0;
+}
+
+.subscribe__input-form {
+  border: 1px solid #d3d7d9;
+  padding: 0px 25px;
+  height: 69px;
+  width: 100%;
+}
+
+.subscribe__input-form::placeholder {
+  font-size: 20px;
+  font-style: italic;
+  color: #d3d7d9;
+}
+
+.subscribe__button {
+  flex: 0 0 126px;
+}
+
+.subscribe__btn {
+  width: 100%;
+  padding: 0 42px;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 69px;
+  background-color: #64c29e;
+}
+
+.footer {
+   background-color: #f7f7f7;
+}
+
+.footer__column {
+  flex: 0 1 33.333%;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  align-items: center;
+}
+
+.footer__text {
+   font-size: 14px;
+  color: #848789;
+  line-height: 18px;
+}
+
+p:first-child {
+  font-weight: 700;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.footer__dev {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dev__text {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  color: #848789;
+  margin: 0 8px 0 0;
 }
